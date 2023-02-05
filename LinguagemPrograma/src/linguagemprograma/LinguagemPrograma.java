@@ -8,6 +8,7 @@ import aula1.ClasseVolume;
 import aula1.ClasseTriangulo;
 import aula1.ClassExercicio_1;
 import aula1.ClassExercicio_2;
+import vetores.ClassVetExemplo_1;
 
 public class LinguagemPrograma {
 
@@ -35,11 +36,12 @@ public class LinguagemPrograma {
         ex1.calcular();
         ex1.exibir();*/
         
-        //Instanciamento da ClassExercicio_2
+        /*//Instanciamento da ClassExercicio_2
         ClassExercicio_2 ex2 = new ClassExercicio_2();
         ex2.leitura();
         ex2.calcular();
-        ex2.exibir();
+        ex2.exibir();*/
+        
+     sc.close();
     }
-    
 }
