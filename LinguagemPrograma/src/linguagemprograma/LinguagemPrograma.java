@@ -8,6 +8,8 @@ import aula1.ClasseVolume;
 import aula1.ClasseTriangulo;
 import aula1.ClassExercicio_1;
 import aula1.ClassExercicio_2;
+import aula2.ClassExercicioA2_1;
+import aula2.ClassExercicioA2_2;
 import vetores.ClassVetExemplo_1;
 
 public class LinguagemPrograma {
@@ -41,6 +43,17 @@ public class LinguagemPrograma {
         ex2.leitura();
         ex2.calcular();
         ex2.exibir();*/
+        
+        /*//Instanciamento da ClassExercicioA2_1
+        ClassExercicioA2_1 a2ex1 = new ClassExercicioA2_1();
+        a2ex1.leitura();
+        //a2ex1.exibir();*/
+        
+        //Instanciamento da ClassExercicioA2_2
+        ClassExercicioA2_2 a2ex2 = new ClassExercicioA2_2();
+        a2ex2.leitura();
+        a2ex2.calcular();
+        a2ex2.exibir();
         
      sc.close();
     }
