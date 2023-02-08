@@ -13,6 +13,7 @@ import aula2.ClassExercicioA2_2;
 import vetores.ClassVetExemplo_1;
 import aula2.ClassTarefaA2_1;
 import aula2.ClassTarefaA2_2;
+import aula3.ClassExercicioA3_1;
 
 
 public class LinguagemPrograma {
@@ -64,11 +65,17 @@ public class LinguagemPrograma {
         t1a2.calcular();
         t1a2.exibir();*/
         
-        //Instanciamento da ClassTarefaA2_2
+        /*//Instanciamento da ClassTarefaA2_2
         ClassTarefaA2_2 t2a2 = new ClassTarefaA2_2();
         t2a2.leitura();
         t2a2.calcular();
-        t2a2.exibir();
+        t2a2.exibir();*/
+        
+        //Instanciamento da ClassExercicioA3_1
+        ClassExercicioA3_1 a3ex1 = new ClassExercicioA3_1();
+        a3ex1.leitura();
+        a3ex1.calcular();
+        a3ex1.exibir();
         
      sc.close();
     }
