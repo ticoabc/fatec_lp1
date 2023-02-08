@@ -14,6 +14,9 @@ import vetores.ClassVetExemplo_1;
 import aula2.ClassTarefaA2_1;
 import aula2.ClassTarefaA2_2;
 import aula3.ClassExercicioA3_1;
+import vetores.ClassVetExemplo_2;
+import vetores.ClassVetExemplo_3;
+import vetores.ClassVetExercicio_2;
 
 
 public class LinguagemPrograma {
@@ -71,11 +74,24 @@ public class LinguagemPrograma {
         t2a2.calcular();
         t2a2.exibir();*/
         
-        //Instanciamento da ClassExercicioA3_1
+        /*//Instanciamento da ClassExercicioA3_1
         ClassExercicioA3_1 a3ex1 = new ClassExercicioA3_1();
         a3ex1.leitura();
         a3ex1.calcular();
-        a3ex1.exibir();
+        a3ex1.exibir();*/
+        
+        /*//Nesta classe não foi necessário instanciar para utilizar os 
+        // atributos dentro do main
+        ClassVetExemplo_2.controle(sc);*/
+        
+        /*//Instanciamento da ClassVetExemplo_3
+        ClassVetExemplo_3 vetex3 = new ClassVetExemplo_3();
+        vetex3.novaLinha(sc);
+        vetex3.exibir();*/
+        
+        //Nesta classe não foi necessário instanciar para utilizar os 
+        // atributos dentro do main
+        ClassVetExercicio_2.controle(sc);
         
      sc.close();
     }
