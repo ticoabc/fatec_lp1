@@ -14,6 +14,11 @@ import vetores.ClassVetExemplo_1;
 import aula2.ClassTarefaA2_1;
 import aula2.ClassTarefaA2_2;
 import aula3.ClassExercicioA3_1;
+import aula3.ClassExercicioA3_2;
+import aula3.ClassExercicioA3_3;
+import aula3.ClassTarefaA3_1;
+import aula3.ClassTarefaA3_2;
+import aula3.ClassTarefaA3_3;
 import vetores.ClassVetExemplo_2;
 import vetores.ClassVetExemplo_3;
 import vetores.ClassVetExercicio_2;
@@ -74,11 +79,41 @@ public class LinguagemPrograma {
         t2a2.calcular();
         t2a2.exibir();*/
         
-        /*//Instanciamento da ClassExercicioA3_1
-        ClassExercicioA3_1 a3ex1 = new ClassExercicioA3_1();
+        //Instanciamento da ClassExercicioA3_1
+        /*ClassExercicioA3_1 a3ex1 = new ClassExercicioA3_1();
         a3ex1.leitura();
         a3ex1.calcular();
         a3ex1.exibir();*/
+        
+        /*//Instanciamento da ClassExercicioA3_2
+        ClassExercicioA3_2 a3ex2 = new ClassExercicioA3_2();
+        a3ex2.leitura();
+        a3ex2.calcular();
+        a3ex2.exibir();*/
+        
+        /*//Instanciamento da ClassExercicioA3_2
+        ClassExercicioA3_3 a3ex3 = new ClassExercicioA3_3();
+        a3ex3.leitura();
+        a3ex3.calcular();
+        a3ex3.exibir();*/
+        
+        /*//Instanciamento da ClassTarefaA3_1
+        ClassTarefaA3_1 t3a1 = new ClassTarefaA3_1();
+        t3a1.leitura();
+        t3a1.calcular();
+        t3a1.exibir();*/
+        
+        /*//Instanciamento da ClassTarefaA3_2
+        ClassTarefaA3_2 t3a2 = new ClassTarefaA3_2();
+        t3a2.leitura();
+        t3a2.calcular();
+        t3a2.exibir();*/
+        
+        //Instanciamento da ClassTarefaA3_3
+        ClassTarefaA3_3 t3a3 = new ClassTarefaA3_3();
+        t3a3.leitura();
+        t3a3.calcular();
+        t3a3.exibir();
         
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
@@ -89,9 +124,9 @@ public class LinguagemPrograma {
         vetex3.novaLinha(sc);
         vetex3.exibir();*/
         
-        //Nesta classe não foi necessário instanciar para utilizar os 
+        /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
-        ClassVetExercicio_2.controle(sc);
+        ClassVetExercicio_2.controle(sc);*/
         
      sc.close();
     }
