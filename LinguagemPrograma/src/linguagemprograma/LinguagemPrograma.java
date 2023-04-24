@@ -31,8 +31,8 @@ public class LinguagemPrograma {
         Scanner sc = new Scanner(System.in);
         
         //Instanciamento da ClasseVolume
-        /*ClasseVolume v = new ClasseVolume();
-        System.out.println("Digite os dados solicitados: ");
+        ClasseVolume v = new ClasseVolume();
+        /*System.out.println("Digite os dados solicitados: ");
         v.leitura();
         v.calcular();
         v.exibir();*/
@@ -110,10 +110,10 @@ public class LinguagemPrograma {
         t3a2.exibir();*/
         
         //Instanciamento da ClassTarefaA3_3
-        ClassTarefaA3_3 t3a3 = new ClassTarefaA3_3();
+        /*ClassTarefaA3_3 t3a3 = new ClassTarefaA3_3();
         t3a3.leitura();
         t3a3.calcular();
-        t3a3.exibir();
+        t3a3.exibir();*/
         
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
@@ -128,6 +128,35 @@ public class LinguagemPrograma {
         // atributos dentro do main
         ClassVetExercicio_2.controle(sc);*/
         
-     sc.close();
+        int item = 0;
+        int subitem = 0;
+        while (true){
+            System.out.print("\n>>> Exercícios <<<");
+            System.out.print("\n1 - Aula 1");
+            System.out.print("\n2 - Aula 2");
+            System.out.print("\n3 - Aula 3");
+            System.out.print("\n0 - Finalizar ");
+            System.out.print("\n\nDigite a operação desejada: ");
+            item = sc.nextInt();
+            
+            switch (item){
+                case 1:
+                    switch (subitem){
+                        case 4:
+                        v.leitura();
+                        v.calcular();
+                        v.exibir();
+                        break;
+                        
+                        case 0:
+                        System.exit(0);
+                        break;
+                    }                    
+                case 0:
+                    System.exit(0);
+                    break;
+            }
+        }
+     //sc.close();
     }
 }

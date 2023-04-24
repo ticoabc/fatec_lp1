@@ -25,7 +25,8 @@ public class ClasseVolume {
     public void leitura(){
         Scanner leitor = new Scanner(System.in);
         
-        System.out.print("Digite o lado: ");
+        System.out.print("Cálculo de Volume");
+        System.out.print("\nDigite o lado: ");
         lado = leitor.nextDouble();
         
         System.out.print("Digite o altura: ");

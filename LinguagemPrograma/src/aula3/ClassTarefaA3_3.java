@@ -21,15 +21,13 @@ public class ClassTarefaA3_3 {
     public void leitura() {
         Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Equação completa de segundo grau");
         System.out.print("Digite o Número A: ");
         NumA = leitor.nextDouble();
-        System.out.print("\n ");
         System.out.print("Digite o Número B: ");
         NumB = leitor.nextDouble();
-        System.out.print("\n ");
         System.out.print("Digite o Número C: ");
         NumC = leitor.nextDouble();
-        
     }
     
     public void calcular() {
