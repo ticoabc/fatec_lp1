@@ -23,7 +23,10 @@ public class ClasseTriangulo {
         Scanner leitor = new Scanner(System.in);
         
         //System.out.print("Digite o dados: ");
+        System.out.print("Cálculo da Área do Triângulo");
+        System.out.print("\nDigite o 1° lado: ");
         a = leitor.nextDouble();
+        System.out.print("Digite o 2° lado: ");
         b = leitor.nextDouble();
         //c = leitor.nextDouble();
     }
@@ -36,8 +39,8 @@ public class ClasseTriangulo {
     
     //Método exibir
     public void exibir(){
-        System.out.println("Resultado: ");
-        System.out.println("***Área do Triângulo - Ret***");
+        System.out.println("\nResultado: ");
+        System.out.println("***Área do Triângulo retângulo***");
         System.out.println(at);
     }
 }

@@ -23,8 +23,9 @@ public class ClassExercicio_2 {
     //Método leitura
     public void leitura() {
         Scanner leitor = new Scanner(System.in);
+        System.out.print("\nCalcular e mostrar quantos salários mínimos");
         
-        System.out.print("Digite o Salário R$: ");
+        System.out.print("\nDigite o Salário R$: ");
         salario = leitor.nextDouble();
     }
     
@@ -35,7 +36,8 @@ public class ClassExercicio_2 {
     
     //Método exibir
     public void exibir(){
-        System.out.printf("Salário atual R$: " + salario);
-        System.out.printf("Quantidade de Mínimos:  %.2f%n", quantidade);
+        System.out.printf("\nSalário atual R$: " + salario);
+        System.out.printf("\nSalário base  R$: " + base);
+        System.out.printf("\nQuantidade de Mínimos:  %.2f%n", quantidade);
     }    
 }

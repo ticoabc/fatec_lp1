@@ -26,12 +26,13 @@ public class ClassExercicio_1 {
 
     //Método leitura
     public void leitura() {
-        Scanner leitor = new Scanner(System.in);
+        Scanner leitor = new Scanner(System.in);        
+        System.out.print("\nCálculo de produto com desconto");
         
-        System.out.print("Digite o Produto: ");
+        System.out.print("\nDigite o nome do Produto: ");
         produto_nome = leitor.next();
         
-        System.out.print("Digite o Valor: ");
+        System.out.print("Digite o Valor R$: ");
         valor_inicial = leitor.nextFloat();
     }
     
@@ -42,7 +43,8 @@ public class ClassExercicio_1 {
     
     //Método exibir
     public void exibir(){
-        System.out.println("Valor atual R$: " + valor_inicial);
+        System.out.println("\nValor atual R$: " + valor_inicial);
+        System.out.println("Desconto de 9%");
         System.out.println("Valor reajustado R$: " + valor_novo);
     }
 }

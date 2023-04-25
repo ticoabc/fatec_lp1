@@ -38,21 +38,21 @@ public class LinguagemPrograma {
         v.exibir();*/
        
         //Instanciamento da ClasseTriangulo
-        /*ClasseTriangulo t = new ClasseTriangulo();
-        System.out.println("Digite os dados solicitados: ");
+        ClasseTriangulo t = new ClasseTriangulo();
+        /*System.out.println("Digite os dados solicitados: ");
         t.leitura();
         t.calcular();
         t.exibir();*/
         
-        /*//Instanciamento da ClassExercicio_1
+        //Instanciamento da ClassExercicio_1
         ClassExercicio_1 ex1 = new ClassExercicio_1();
-        ex1.leitura();
+        /*ex1.leitura();
         ex1.calcular();
         ex1.exibir();*/
         
-        /*//Instanciamento da ClassExercicio_2
+        //Instanciamento da ClassExercicio_2
         ClassExercicio_2 ex2 = new ClassExercicio_2();
-        ex2.leitura();
+        /*ex2.leitura();
         ex2.calcular();
         ex2.exibir();*/
         
@@ -129,7 +129,6 @@ public class LinguagemPrograma {
         ClassVetExercicio_2.controle(sc);*/
         
         int item = 0;
-        int subitem = 0;
         while (true){
             System.out.print("\n>>> Exercícios <<<");
             System.out.print("\n1 - Aula 1");
@@ -141,7 +140,33 @@ public class LinguagemPrograma {
             
             switch (item){
                 case 1:
-                    switch (subitem){
+                while(true){
+                    System.out.print("\n1 - Exercício 1");
+                    System.out.print("\n2 - Exercício 2");
+                    System.out.print("\n3 - Triângulo");
+                    System.out.print("\n4 - Volume");
+                    System.out.print("\n0 - Finalizar ");
+                    System.out.print("\n\nDigite a operação desejada: ");
+                    item = sc.nextInt();
+                    switch (item){
+                        case 1:
+                        ex1.leitura();
+                        ex1.calcular();
+                        ex1.exibir();
+                        break;
+                        
+                        case 2:
+                        ex2.leitura();
+                        ex2.calcular();
+                        ex2.exibir();
+                        break;
+                        
+                        case 3:
+                        t.leitura();
+                        t.calcular();
+                        t.exibir();
+                        break;
+                        
                         case 4:
                         v.leitura();
                         v.calcular();
@@ -151,7 +176,8 @@ public class LinguagemPrograma {
                         case 0:
                         System.exit(0);
                         break;
-                    }                    
+                    }
+                }
                 case 0:
                     System.exit(0);
                     break;
