@@ -1,6 +1,5 @@
 package linguagemprograma;
 /**
- *
  * @author Tiago de Freitas
  */
 import java.util.Scanner;
@@ -11,14 +10,14 @@ import aula1.ClassExercicio_2;
 import aula2.ClassExercicioA2_1;
 import aula2.ClassExercicioA2_2;
 import vetores.ClassVetExemplo_1;
-import aula2.ClassTarefaA2_1;
-import aula2.ClassTarefaA2_2;
+import aula2.ClassTarefaA2_T1;
+import aula2.ClassTarefaA2_T2;
 import aula3.ClassExercicioA3_1;
 import aula3.ClassExercicioA3_2;
 import aula3.ClassExercicioA3_3;
-import aula3.ClassTarefaA3_1;
-import aula3.ClassTarefaA3_2;
-import aula3.ClassTarefaA3_3;
+import aula3.ClassTarefaA3_T1;
+import aula3.ClassTarefaA3_T2;
+import aula3.ClassTarefaA3_T3;
 import vetores.ClassVetExemplo_2;
 import vetores.ClassVetExemplo_3;
 import vetores.ClassVetExercicio_2;
@@ -56,62 +55,62 @@ public class LinguagemPrograma {
         ex2.calcular();
         ex2.exibir();*/
         
-        /*//Instanciamento da ClassExercicioA2_1
+        //Instanciamento da ClassExercicioA2_1
         ClassExercicioA2_1 a2ex1 = new ClassExercicioA2_1();
-        a2ex1.leitura();
+        //a2ex1.leitura();
         //a2ex1.exibir();*/
         
-        /*//Instanciamento da ClassExercicioA2_2
+        //Instanciamento da ClassExercicioA2_2
         ClassExercicioA2_2 a2ex2 = new ClassExercicioA2_2();
-        a2ex2.leitura();
+        /*a2ex2.leitura();
         a2ex2.calcular();
         a2ex2.exibir();*/
         
-        /*//Instanciamento da ClassTarefaA2_1
-        ClassTarefaA2_1 t1a2 = new ClassTarefaA2_1();
-        t1a2.leitura();
-        t1a2.calcular();
-        t1a2.exibir();*/
+        //Instanciamento da ClassTarefaA2_T1
+        ClassTarefaA2_T1 a2t1 = new ClassTarefaA2_T1();
+        /*a2t1.leitura();
+        a2t1.calcular();
+        a2t1.exibir();*/
         
-        /*//Instanciamento da ClassTarefaA2_2
-        ClassTarefaA2_2 t2a2 = new ClassTarefaA2_2();
-        t2a2.leitura();
-        t2a2.calcular();
-        t2a2.exibir();*/
+        //Instanciamento da ClassTarefaA2_T2
+        ClassTarefaA2_T2 a2t2 = new ClassTarefaA2_T2();
+        /*a2t2.leitura();
+        a2t2.calcular();
+        a2t2.exibir();*/
         
         //Instanciamento da ClassExercicioA3_1
-        /*ClassExercicioA3_1 a3ex1 = new ClassExercicioA3_1();
-        a3ex1.leitura();
+        ClassExercicioA3_1 a3ex1 = new ClassExercicioA3_1();
+        /*a3ex1.leitura();
         a3ex1.calcular();
         a3ex1.exibir();*/
         
-        /*//Instanciamento da ClassExercicioA3_2
+        //Instanciamento da ClassExercicioA3_2
         ClassExercicioA3_2 a3ex2 = new ClassExercicioA3_2();
-        a3ex2.leitura();
+        /*a3ex2.leitura();
         a3ex2.calcular();
         a3ex2.exibir();*/
         
-        /*//Instanciamento da ClassExercicioA3_2
+        //Instanciamento da ClassExercicioA3_2
         ClassExercicioA3_3 a3ex3 = new ClassExercicioA3_3();
-        a3ex3.leitura();
+        /*a3ex3.leitura();
         a3ex3.calcular();
         a3ex3.exibir();*/
         
-        /*//Instanciamento da ClassTarefaA3_1
-        ClassTarefaA3_1 t3a1 = new ClassTarefaA3_1();
-        t3a1.leitura();
-        t3a1.calcular();
-        t3a1.exibir();*/
+        //Instanciamento da ClassTarefaA3_T1
+        ClassTarefaA3_T1 a3t1 = new ClassTarefaA3_T1();
+        /*a3t1.leitura();
+        a3t1.calcular();
+        a3t1.exibir();*/
         
-        /*//Instanciamento da ClassTarefaA3_2
-        ClassTarefaA3_2 t3a2 = new ClassTarefaA3_2();
-        t3a2.leitura();
-        t3a2.calcular();
-        t3a2.exibir();*/
+        //Instanciamento da ClassTarefaA3_T2
+        ClassTarefaA3_T2 a3t2 = new ClassTarefaA3_T2();
+        /*a3t2.leitura();
+        a3t2.calcular();
+        a3t2.exibir();*/
         
-        //Instanciamento da ClassTarefaA3_3
-        /*ClassTarefaA3_3 t3a3 = new ClassTarefaA3_3();
-        t3a3.leitura();
+        //Instanciamento da ClassTarefaA3_T3
+        ClassTarefaA3_T3 a3t3 = new ClassTarefaA3_T3();
+        /*t3a3.leitura();
         t3a3.calcular();
         t3a3.exibir();*/
         
@@ -141,12 +140,13 @@ public class LinguagemPrograma {
             switch (item){
                 case 1:
                 while(true){
-                    System.out.print("\n1 - Exercício 1");
-                    System.out.print("\n2 - Exercício 2");
-                    System.out.print("\n3 - Triângulo");
-                    System.out.print("\n4 - Volume");
-                    System.out.print("\n0 - Finalizar ");
-                    System.out.print("\n\nDigite a operação desejada: ");
+                    System.out.print("\n\t>>> Exercícios - Aula 1<<<");
+                    System.out.print("\n\t1 - Exercício 1");
+                    System.out.print("\n\t2 - Exercício 2");
+                    System.out.print("\n\t3 - Triângulo");
+                    System.out.print("\n\t4 - Volume");
+                    System.out.print("\n\t0 - Finalizar ");
+                    System.out.print("\n\n\tDigite a operação desejada: ");
                     item = sc.nextInt();
                     switch (item){
                         case 1:
@@ -182,7 +182,103 @@ public class LinguagemPrograma {
                     System.exit(0);
                     break;
             }
+            switch (item){
+                case 2:
+                while(true){
+                    System.out.print("\n\t>>> Exercícios - Aula 2<<<");
+                    System.out.print("\n\t1 - ClassExercicioA2_1");
+                    System.out.print("\n\t2 - ClassExercicioA2_2");
+                    System.out.print("\n\t3 - ClassTarefaA2_T1");
+                    System.out.print("\n\t4 - ClassTarefaA2_T2");
+                    System.out.print("\n\t0 - Finalizar ");
+                    System.out.print("\n\n\tDigite a operação desejada: ");
+                    item = sc.nextInt();
+                    switch (item){
+                        case 1:
+                        a2ex1.leitura();
+                        break;
+                        
+                        case 2:
+                        a2ex2.leitura();
+                        a2ex2.calcular();
+                        a2ex2.exibir();
+                        break;
+                        
+                        case 3:
+                        a2t1.leitura();
+                        a2t1.calcular();
+                        a2t1.exibir();
+                        break;
+                        
+                        case 4:
+                        a2t2.leitura();
+                        a2t2.calcular();
+                        a2t2.exibir();
+                        break;
+                        
+                        case 0:
+                        System.exit(0);
+                        break;
+                    }
+                }
+            }
+                switch (item){
+                    case 3:
+                    while(true){
+                        System.out.print("\n\t>>> Exercícios - Aula 3<<<");
+                        System.out.print("\n\t1 - ClassExercicioA3_1");
+                        System.out.print("\n\t2 - ClassExercicioA3_2");
+                        System.out.print("\n\t3 - ClassExercicioA3_3");
+                        System.out.print("\n\t4 - ClassTarefaA3_T1");
+                        System.out.print("\n\t5 - ClassTarefaA3_T2");
+                        System.out.print("\n\t6 - ClassTarefaA3_T3");
+                        System.out.print("\n\t0 - Finalizar ");
+                        System.out.print("\n\n\tDigite a operação desejada: ");
+                        item = sc.nextInt();
+                        switch (item){
+                            case 1:
+                            a3ex1.leitura();
+                            a3ex1.calcular();
+                            a3ex1.exibir();
+                            break;
+                            
+                            case 2:
+                            a3ex2.leitura();
+                            a3ex2.calcular();
+                            a3ex2.exibir();
+                            break;
+                            
+                            case 3:
+                            a3ex3.leitura();
+                            a3ex3.calcular();
+                            a3ex3.exibir();
+                            break;
+                            
+                            case 4:
+                            a3t1.leitura();
+                            a3t1.calcular();
+                            a3t1.exibir();
+                            break;
+                            
+                            case 5:
+                            a3t2.leitura();
+                            a3t2.calcular();
+                            a3t2.exibir();
+                            break;
+                            
+                            case 6:
+                            a3t3.leitura();
+                            a3t3.calcular();
+                            a3t3.exibir();
+                            break;
+                            
+                            case 0:
+                            System.exit(0);
+                            break;
+                        }
+                    }
+                }
+            }
         }
      //sc.close();
     }
-}
