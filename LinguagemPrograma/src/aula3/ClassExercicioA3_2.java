@@ -4,11 +4,7 @@ Exercício do Livro - Java para Iniciantes da ORACLE
 package aula3;
 
 import java.util.Scanner;
-
-/**
- *
- * @author Tiago de Freitas
- */
+/*@author Tiago de Freitas*/
 public class ClassExercicioA3_2 {
     
     final double constante = 3.7854;
@@ -19,7 +15,8 @@ public class ClassExercicioA3_2 {
     public void leitura() {
         Scanner leitor = new Scanner(System.in);
         
-        System.out.print("Digite a quantidade de Gallons: ");
+        System.out.println("\n\tExercício do Livro - Java para Iniciantes da ORACLE");
+        System.out.print("\n\tDigite a quantidade de Gallons: ");
         gallons = leitor.nextDouble();
     }
     
@@ -29,9 +26,7 @@ public class ClassExercicioA3_2 {
     }
     
     //Método exibir
-    public void exibir(){
-        
-        System.out.printf("A quantidade de Liters: %.2f%n\n", liters);
-        
+    public void exibir(){        
+        System.out.printf("\tA quantidade de Liters: %.2f%n\n", liters);        
     }    
 }

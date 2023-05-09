@@ -16,7 +16,7 @@ import java.util.Scanner;
  *
  * @author Tiago de Freitas
  */
-public class ClassTarefaA3_1 {
+public class ClassTarefaA3_T1 {
     
     public double NumA, NumB, Dif;
     public String saida;
@@ -25,9 +25,12 @@ public class ClassTarefaA3_1 {
     public void leitura() {
         Scanner leitor = new Scanner(System.in);
         
-        System.out.print("Digite o Número A: ");
+        System.out.println("\tLer dois valores numéricos inteiros"
+                            + " e apresentar o resultado da diferença\n" +
+                                "\t\tdo maior pelo menor valor.\n");
+        System.out.print("\n\tDigite o Número A: ");
         NumA = leitor.nextDouble();
-        System.out.print("Digite o Número B: ");
+        System.out.print("\tDigite o Número B: ");
         NumB = leitor.nextDouble();        
     }
     
@@ -43,9 +46,9 @@ public class ClassTarefaA3_1 {
     //Método exibir
     public void exibir(){
         
-        saida = "\nNúmeroA: " + NumA;
-        saida += "\nNúmeroB: " + NumB;
-        saida += "\nDiferença: " + String.format("= %.2f", Dif);
+        saida = "\n\tNúmeroA: " + NumA;
+        saida += "\n\tNúmeroB: " + NumB;
+        saida += "\n\tDiferença: " + String.format("= %.2f", Dif);
         System.out.println(saida );
         System.out.println();
         

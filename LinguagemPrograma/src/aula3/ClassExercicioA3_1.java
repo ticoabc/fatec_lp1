@@ -27,13 +27,18 @@ public class ClassExercicioA3_1 {
     public void leitura() {
         Scanner leitor = new Scanner(System.in);
         
-        System.out.print("Digite seu nome: ");
+        System.out.print("\tFormula: IMC = peso / altura * altura\n" +
+                        "\tIMC menor que 18,5 exibir “Abaixo do peso”\n" +
+                        "\tIMC entre 18,5 e 24,9 exibir “Peso normal”\n" +
+                        "\tIMC acima de 25 exibir “ tá com Sobrepeso”\n\n");
+        
+        System.out.print("\tDigite seu nome: ");
         nome = leitor.next();
         
-        System.out.print("Digite seu peso: ");
+        System.out.print("\tDigite seu peso: ");
         peso = leitor.nextDouble();
         
-        System.out.print("Digite sua altura: ");
+        System.out.print("\tDigite sua altura: ");
         altura = leitor.nextDouble();
 
     }
@@ -46,14 +51,14 @@ public class ClassExercicioA3_1 {
     //Método exibir
     public void exibir(){
         if(imc < 18.5){
-            System.out.printf("IMC: %.2f%n", imc);
-            System.out.print("Você está abaixo do peso\n");
+            System.out.printf("\n\tIMC: %.2f%n", imc);
+            System.out.print("\tVocê está abaixo do peso\n");
         }else if (imc > 18.5 && imc < 24.9){
-            System.out.printf("IMC: %.2f%n", imc);
-            System.out.print("Você está com peso normal\n");
+            System.out.printf("\n\tIMC: %.2f%n", imc);
+            System.out.print("\tVocê está com peso normal\n");
         }else if(imc > 25){
-            System.out.printf("IMC: %.2f%n", imc);
-            System.out.print("Você está com Sobrepeso\n");
+            System.out.printf("\n\tIMC: %.2f%n", imc);
+            System.out.print("\tVocê está com Sobrepeso\n");
         }
     }
 }

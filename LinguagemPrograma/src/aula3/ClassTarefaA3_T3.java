@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Tiago de Freitas
  */
-public class ClassTarefaA3_3 {
+public class ClassTarefaA3_T3 {
     
     public double NumA, NumB, NumC, Delta, RaizA, RaizB;
     String saida;
@@ -21,12 +21,12 @@ public class ClassTarefaA3_3 {
     public void leitura() {
         Scanner leitor = new Scanner(System.in);
         
-        System.out.println("Equação completa de segundo grau");
-        System.out.print("Digite o Número A: ");
+        System.out.print("\n\t>>>>Equação completa de segundo grau<<<<\n");
+        System.out.print("\tDigite o Número A: ");
         NumA = leitor.nextDouble();
-        System.out.print("Digite o Número B: ");
+        System.out.print("\tDigite o Número B: ");
         NumB = leitor.nextDouble();
-        System.out.print("Digite o Número C: ");
+        System.out.print("\tDigite o Número C: ");
         NumC = leitor.nextDouble();
     }
     

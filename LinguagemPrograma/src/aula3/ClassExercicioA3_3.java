@@ -31,8 +31,10 @@ public class ClassExercicioA3_3 {
     public void leitura() {
         Scanner leitor = new Scanner(System.in);
         
-        System.out.println("Digite os catetos A e B:");
+        System.out.println("\n\tCalcular a Hipotenusa");
+        System.out.print("\tDigite os catetos A: ");
         CatetoA = leitor.nextDouble();
+        System.out.print("\n\tDigite os catetos B: ");
         CatetoB = leitor.nextDouble();
         
     }
@@ -46,9 +48,9 @@ public class ClassExercicioA3_3 {
     //Método exibir
     public void exibir(){
         
-        saida = "\nCatetoA: " + CatetoA;
-        saida += "\nCatetoB: " + CatetoB;
-        saida += "\nHipotenusa: " + String.format("= %.2f", Hipotenusa);
+        saida = "\n\tCatetoA: " + CatetoA;
+        saida += "\n\tCatetoB: " + CatetoB;
+        saida += "\n\tHipotenusa: " + String.format("= %.2f", Hipotenusa);
         System.out.println(saida );
         System.out.println(); 
         
