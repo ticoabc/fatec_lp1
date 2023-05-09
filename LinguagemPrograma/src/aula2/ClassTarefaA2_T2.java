@@ -14,19 +14,28 @@ Maior que 65 anos – R$ 400,00
 package aula2;
 
 import javax.swing.JOptionPane;
-
 /**
- *
  * @author Tiago de Freitas
  */
-public class ClassTarefaA2_2 {
+public class ClassTarefaA2_T2 {
     
     String nome;
     double idade, valor;
     
     //Método leitura
-    public void leitura() {      
+    public void leitura() {
        
+        JOptionPane.showMessageDialog(null, "Criar um programa que entre com o nome e a\n" +
+            "idade de uma pessoa e mostre o valor que ela deverá pagar.\n" +
+            "(COMANDO IF ELSE E PERADORES RELACIONAIS E LÓGICOS)\n" +
+            "\n" +
+            "Até 10 anos – R$ 30,00\n" +
+            "Acima de 10 até 29 anos – R$ 60,00\n" +
+            "Acima de 29 até 45 anos – R$ 120,00\n" +
+            "Acima de 45 até 59 anos – R$ 150,00\n" +
+            "Acima de 59 até 65 anos – R$ 250,00\n" +
+            "Maior que 65 anos – R$ 400,00");
+        
         nome =(JOptionPane.showInputDialog("Digite seu nome:"));
         idade = Double.parseDouble(JOptionPane.showInputDialog
                                         ("Digite sua idade: "));
@@ -50,7 +59,7 @@ public class ClassTarefaA2_2 {
     }
     
     //Método exibir
-    public void exibir(){
+    public void exibir(){   
         JOptionPane.showMessageDialog
             (null, "O Valor do plano será: R$" + valor);
     }

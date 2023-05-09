@@ -1,12 +1,7 @@
-/*
-
- */
 package aula2;
 
 import javax.swing.JOptionPane;
-
 /**
- *
  * @author Tiago de Freitas
  */
 public class ClassExercicioA2_2 {

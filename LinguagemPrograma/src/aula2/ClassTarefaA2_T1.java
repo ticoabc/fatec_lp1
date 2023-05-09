@@ -1,9 +1,3 @@
-/*
-Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o
-valor da compra for menor que R$20,00; caso contrário, o lucro será de 30%. 
-Entrar com o valor do produto e imprimir o valor da venda. 
-(Fazer as conversões de texto para número corretamente)
- */
 package aula2;
 
 import javax.swing.JOptionPane;
@@ -12,7 +6,7 @@ import javax.swing.JOptionPane;
  *
  * @author Tiago de Freitas
  */
-public class ClassTarefaA2_1 {
+public class ClassTarefaA2_T1 {
     
     String x = "0";
     String y = "0";
@@ -22,20 +16,22 @@ public class ClassTarefaA2_1 {
     double ySaida = Double.parseDouble(y);
     
      //Método leitura
-    public void leitura() {      
-       
-        xEntrada = Double.parseDouble(JOptionPane.showInputDialog
-                    ("Digite o valor do produto"));
+    public void leitura() {
+        JOptionPane.showMessageDialog(null, "Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o\n" +
+        "valor da compra for menor que R$20,00; caso contrário, o lucro será de 30%. \n" +
+        "Entrar com o valor do produto e imprimir o valor da venda. \n" +
+        "(Fazer as conversões de texto para número corretamente)");
+        xEntrada = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do produto"));
     }
     
     //Método calcular
-    public void calcular(){
-        if(xEntrada < 20){
+    public void calcular() {
+        if (xEntrada < 20) {
             
             ySaida = xEntrada * 1.45;
-            
-        }else{
-            
+
+        } else {
+
             ySaida = xEntrada * 1.30;
         }
     }
