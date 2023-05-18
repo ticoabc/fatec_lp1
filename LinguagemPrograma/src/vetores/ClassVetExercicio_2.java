@@ -20,10 +20,15 @@ public class ClassVetExercicio_2 {
     public static void armazenar(Scanner leitor) {
         for (int i = 0; i < 5; ++i) {
             linha += 1; // criando uma nova linha
-            System.out.print("\nDigite o nome; idade; salário: ");
+            
+            System.out.print("\nDigite o nome: ");            
             nome[linha] = leitor.next();
+            
+            System.out.print("\nDigite idade: ");
             ida[linha] = leitor.nextInt();
-            sal[linha] = leitor.nextDouble();
+            
+            System.out.print("\nDigite salário: ");
+            sal[linha] = leitor.nextDouble();            
         }
     }
     

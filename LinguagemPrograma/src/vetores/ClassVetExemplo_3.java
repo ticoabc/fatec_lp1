@@ -4,10 +4,7 @@
 package vetores;
 import java.util.Scanner;
 
-/**
- *
- * @author Tiago de Freitas
- */
+/* @author Tiago de Freitas */
 public class ClassVetExemplo_3 {
     
     Scanner leitor = new Scanner(System.in);
@@ -20,7 +17,7 @@ public class ClassVetExemplo_3 {
     public void novaLinha  ( Scanner leitor ){
     
         linha += 1; // criando uma nova linha
-        System.out.print("\nDigite um número: ");
+        System.out.printf("\nDigite o número: ");
         vect [linha] = leitor.nextDouble();   
     }
     
