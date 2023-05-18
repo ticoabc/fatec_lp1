@@ -1,7 +1,5 @@
 package executa;
-/**
- * @author Tiago de Freitas
- */
+/*@author Tiago de Freitas */
 import java.util.Scanner;
 import aula1.ClasseVolume;
 import aula1.ClasseTriangulo;
@@ -130,9 +128,9 @@ public class ExecutaPrograma {
         // atributos dentro do main
         ClassVetExemplo_2.controle(sc);*/
         
-        /*//Instanciamento da ClassVetExemplo_3
+        //Instanciamento da ClassVetExemplo_3
         ClassVetExemplo_3 vetex3 = new ClassVetExemplo_3();
-        vetex3.novaLinha(sc);
+        /*vetex3.novaLinha(sc);
         vetex3.exibir();*/
         
         /*//Nesta classe não foi necessário instanciar para utilizar os 
@@ -146,6 +144,7 @@ public class ExecutaPrograma {
             System.out.print("\n2 - Aula 2");
             System.out.print("\n3 - Aula 3");
             System.out.print("\n4 - Aula 4");
+            System.out.print("\n99 - Vetores");
             System.out.print("\n0 - Finalizar ");
             System.out.print("\n\nDigite a operação desejada: ");
             item = sc.nextInt();
@@ -329,11 +328,57 @@ public class ExecutaPrograma {
                     a4t2.entrada();
                     a4t2.calcular();
                     a4t2.exibir();
-                    break;                    
+                    break;
+                    
+                    case 0:
+                    System.exit(0);
+                    break;
+                    }
+                }
+            }
+            switch (item){
+                case 99:
+                    while(true){
+                    System.out.print("\n\t>>>Exercícios com Vetores<<<");
+                    System.out.print("\n\t1 - ClassVetExemplo_1");
+                    System.out.print("\n\t2 - ClassVetExemplo_2");
+                    System.out.print("\n\t3 - ClassVetExemplo_3");
+                    System.out.print("\n\t4 - ClassVetExemplo_4");
+                    System.out.print("\n\t5 - ClassVetExercicio_2");
+                    System.out.print("\n\t0 - Finalizar ");
+                    System.out.print("\n\n\tDigite a operação desejada: ");
+                    item = sc.nextInt();
+                    switch (item){
+                    case 1:
+                    //Nesta classe não foi necessário instanciar para utilizar os 
+                    // atributos dentro do main
+                    ClassVetExemplo_1.exibir();
+                    break;
+                    
+                    case 2:
+                    //Nesta classe não foi necessário instanciar para utilizar os 
+                    // atributos dentro do main
+                    ClassVetExemplo_2.controle(sc);
+                    break;
+                    
+                    case 3:
+                    vetex3.novaLinha(sc);
+                    vetex3.exibir();
+                    break;
+                    
+                    case 5:
+                    //Nesta classe não foi necessário instanciar para utilizar os 
+                    // atributos dentro do main
+                    ClassVetExercicio_2.controle(sc);
+                    break;                   
+                    
+                    case 0:
+                    System.exit(0);
+                    break;
+                    }
                 }
             }
         }
+        //sc.close();
     }
-    //sc.close();
-   }
 }
