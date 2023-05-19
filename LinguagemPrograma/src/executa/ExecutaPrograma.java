@@ -20,9 +20,13 @@ import aula4.ClassExemploA4_1;
 import aula4.ClassExemploA4_2;
 import aula4.ClassTarefaA4_T1;
 import aula4.ClassTarefaA4_T2;
+import diversos.DiasdaSemana;
+import diversos.LotteryOdds;
+import diversos.Retirement;
 import vetores.ClassVetExemplo_2;
 import vetores.ClassVetExemplo_3;
 import vetores.ClassVetExercicio_2;
+import vetores.ClassVetExercicio_4;
 
 
 public class ExecutaPrograma {
@@ -137,6 +141,13 @@ public class ExecutaPrograma {
         // atributos dentro do main
         ClassVetExercicio_2.controle(sc);*/
         
+        ClassVetExercicio_4 vetexc4 = new ClassVetExercicio_4();
+        
+        //Diversos
+        DiasdaSemana dia = new DiasdaSemana();
+        Retirement ret = new Retirement();
+        LotteryOdds lot = new LotteryOdds();
+        
         int item = 0;
         while (true){
             System.out.print("\n>>> Exercícios <<<");
@@ -144,6 +155,7 @@ public class ExecutaPrograma {
             System.out.print("\n2 - Aula 2");
             System.out.print("\n3 - Aula 3");
             System.out.print("\n4 - Aula 4");
+            System.out.print("\n20 - Diversos");
             System.out.print("\n99 - Vetores");
             System.out.print("\n0 - Finalizar ");
             System.out.print("\n\nDigite a operação desejada: ");
@@ -337,6 +349,38 @@ public class ExecutaPrograma {
                 }
             }
             switch (item){
+                case 20:
+                    while(true){
+                    System.out.print("\n\t>>>Exercícios Diversos<<<");
+                    System.out.print("\n\t1 - DiasdaSemana");
+                    System.out.print("\n\t2 - Retirement");
+                    System.out.print("\n\t3 - LotteryOdds");
+                    System.out.print("\n\t0 - Finalizar ");
+                    System.out.print("\n\n\tDigite a operação desejada: ");
+                    item = sc.nextInt();
+                    switch (item){
+                    case 1:
+                    dia.leitura();
+                    break;
+                    
+                    case 2:
+                    ret.leitura();
+                    ret.calcular();
+                    break;
+                    
+                    case 3:
+                    lot.leitura();
+                    lot.calcular();
+                    break;
+                    
+                    case 0:
+                    System.exit(0);
+                    break;
+                    }
+                }
+            }
+            
+            switch (item){
                 case 99:
                     while(true){
                     System.out.print("\n\t>>>Exercícios com Vetores<<<");
@@ -345,6 +389,7 @@ public class ExecutaPrograma {
                     System.out.print("\n\t3 - ClassVetExemplo_3");
                     System.out.print("\n\t4 - ClassVetExemplo_4");
                     System.out.print("\n\t5 - ClassVetExercicio_2");
+                    System.out.print("\n\t6 - ClassVetExercicio_4");
                     System.out.print("\n\t0 - Finalizar ");
                     System.out.print("\n\n\tDigite a operação desejada: ");
                     item = sc.nextInt();
@@ -371,6 +416,13 @@ public class ExecutaPrograma {
                     // atributos dentro do main
                     ClassVetExercicio_2.controle(sc);
                     break;                   
+                    
+                    case 6:
+                    //Nesta classe não foi necessário instanciar para utilizar os 
+                    // atributos dentro do main
+                    vetexc4.novaLinha(sc);
+                    vetexc4.exibir();
+                    break;
                     
                     case 0:
                     System.exit(0);

@@ -11,10 +11,9 @@ Em uma época de pouco dinheiro, os comerciantes estão procurando aumentar
  */
 package vetores;
 import java.util.Scanner;
-/**
- *
- * @author Tiago de Freitas
- */
+
+/* @author Tiago de Freitas */
+
 public class ClassVetExercicio_1 {
     
 }

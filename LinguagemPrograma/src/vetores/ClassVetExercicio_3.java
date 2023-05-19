@@ -1,14 +1,9 @@
-/*
-
- */
+/* */
 package vetores;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Tiago de Freitas
- */
+/* @author Tiago de Freitas */
 public class ClassVetExercicio_3 {    
     
     static int n;
