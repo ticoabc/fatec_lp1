@@ -15,7 +15,5 @@ public class DiasdaSemana {
         System.out.print("\n\t>>>Dia da Semana<<<");
         
         System.out.print("\n\tDigite um número entre 1 - 7: ");
-        dia.name();
-        
     }
 }

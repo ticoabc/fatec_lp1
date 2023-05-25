@@ -21,8 +21,11 @@ import aula4.ClassExemploA4_2;
 import aula4.ClassTarefaA4_T1;
 import aula4.ClassTarefaA4_T2;
 import diversos.DiasdaSemana;
+import diversos.ForClass;
 import diversos.LotteryOdds;
+import diversos.MatrixClass;
 import diversos.Retirement;
+import diversos.WhileClass;
 import vetores.ClassVetExemplo_2;
 import vetores.ClassVetExemplo_3;
 import vetores.ClassVetExercicio_2;
@@ -147,6 +150,9 @@ public class ExecutaPrograma {
         DiasdaSemana dia = new DiasdaSemana();
         Retirement ret = new Retirement();
         LotteryOdds lot = new LotteryOdds();
+        MatrixClass mtx = new MatrixClass();
+        ForClass fcl = new ForClass();
+        WhileClass whl = new WhileClass();
         
         int item = 0;
         while (true){
@@ -355,6 +361,9 @@ public class ExecutaPrograma {
                     System.out.print("\n\t1 - DiasdaSemana");
                     System.out.print("\n\t2 - Retirement");
                     System.out.print("\n\t3 - LotteryOdds");
+                    System.out.print("\n\t4 - MatrixClass");
+                    System.out.print("\n\t5 - ForClass");
+                    System.out.print("\n\t6 - WhileClass");
                     System.out.print("\n\t0 - Finalizar ");
                     System.out.print("\n\n\tDigite a operação desejada: ");
                     item = sc.nextInt();
@@ -371,6 +380,18 @@ public class ExecutaPrograma {
                     case 3:
                     lot.leitura();
                     lot.calcular();
+                    break;
+                    
+                    case 4:
+                    mtx.leitura();
+                    break;
+                    
+                    case 5:
+                    fcl.leitura();
+                    break;
+                    
+                    case 6:
+                    whl.leitura();                    
                     break;
                     
                     case 0:
