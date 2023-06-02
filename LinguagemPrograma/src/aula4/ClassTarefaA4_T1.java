@@ -71,6 +71,5 @@ public class ClassTarefaA4_T1 {
         System.out.print("\n\t" + TIPO);
         System.out.print("\n\tS: " + S);
         System.out.print("\n\tAR: " + String.format("%.2f", AR) + "\n");
-    }
-    
+    }    
 }
