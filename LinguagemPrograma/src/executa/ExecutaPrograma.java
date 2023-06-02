@@ -20,6 +20,10 @@ import aula4.ClassExemploA4_1;
 import aula4.ClassExemploA4_2;
 import aula4.ClassTarefaA4_T1;
 import aula4.ClassTarefaA4_T2;
+import aula5.ClassExemploA5_1;
+import aula5.ClassExemploA5_2;
+import aula5.ClassExemploA5_3;
+import aula5.ClassExemploA5_4;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
 import diversos.LotteryOdds;
@@ -123,13 +127,16 @@ public class ExecutaPrograma {
         t3a3.calcular();
         t3a3.exibir();*/
         
-        ClassExemploA4_1 a4exp1 = new ClassExemploA4_1();
-        
-        ClassExemploA4_2 a4exp2 = new ClassExemploA4_2();
-        
-        ClassTarefaA4_T1 a4t1 = new ClassTarefaA4_T1();
-        
+        ClassExemploA4_1 a4exp1 = new ClassExemploA4_1();        
+        ClassExemploA4_2 a4exp2 = new ClassExemploA4_2();        
+        ClassTarefaA4_T1 a4t1 = new ClassTarefaA4_T1();        
         ClassTarefaA4_T2 a4t2 = new ClassTarefaA4_T2();
+        
+        
+        ClassExemploA5_1 a5exp1 = new ClassExemploA5_1();
+        ClassExemploA5_2 a5exp2 = new ClassExemploA5_2();
+        ClassExemploA5_3 a5exp3 = new ClassExemploA5_3();
+        ClassExemploA5_4 a5exp4 = new ClassExemploA5_4();
         
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
@@ -161,6 +168,7 @@ public class ExecutaPrograma {
             System.out.print("\n2 - Aula 2");
             System.out.print("\n3 - Aula 3");
             System.out.print("\n4 - Aula 4");
+            System.out.print("\n5 - Aula 5");
             System.out.print("\n20 - Diversos");
             System.out.print("\n99 - Vetores");
             System.out.print("\n0 - Finalizar ");
@@ -353,7 +361,42 @@ public class ExecutaPrograma {
                     break;
                     }
                 }
+            }            
+            switch (item){
+                case 5:
+                while(true){                        
+                    System.out.print("\n\t>>> Exercícios - Aula 5<<<");
+                    System.out.print("\n\t1 - ClassExemploA5_1");
+                    System.out.print("\n\t2 - ClassExemploA5_2");
+                    System.out.print("\n\t3 - ClassExemploA5_3");
+                    System.out.print("\n\t4 - ClassExemploA5_4");
+                    System.out.print("\n\t0 - Finalizar ");
+                    System.out.print("\n\n\tDigite a operação desejada: ");
+                    item = sc.nextInt();
+                    switch (item){
+                    case 1:
+                    a5exp1.exibir();
+                    break;
+                    
+                    case 2:
+                    a5exp2.leitura();
+                    break;
+                    
+                    case 3:
+                    a5exp3.leitura();
+                    break;
+                    
+                    case 4:
+                    a5exp4.leitura();                    
+                    break;
+                    
+                    case 0:
+                    System.exit(0);
+                    break;
+                    }
+                }
             }
+            
             switch (item){
                 case 20:
                     while(true){
