@@ -24,6 +24,7 @@ import aula5.ClassExemploA5_1;
 import aula5.ClassExemploA5_2;
 import aula5.ClassExemploA5_3;
 import aula5.ClassExemploA5_4;
+import aula6.Aula6Principal;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
 import diversos.LotteryOdds;
@@ -138,6 +139,8 @@ public class ExecutaPrograma {
         ClassExemploA5_3 a5exp3 = new ClassExemploA5_3();
         ClassExemploA5_4 a5exp4 = new ClassExemploA5_4();
         
+        Aula6Principal a6exp1 = new Aula6Principal();
+        
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
         ClassVetExemplo_2.controle(sc);*/
@@ -169,6 +172,7 @@ public class ExecutaPrograma {
             System.out.print("\n3 - Aula 3");
             System.out.print("\n4 - Aula 4");
             System.out.print("\n5 - Aula 5");
+            System.out.print("\n6 - Aula 6");
             System.out.print("\n20 - Diversos");
             System.out.print("\n99 - Vetores");
             System.out.print("\n0 - Finalizar ");
@@ -390,6 +394,20 @@ public class ExecutaPrograma {
                     a5exp4.leitura();                    
                     break;
                     
+                    case 0:
+                    System.exit(0);
+                    break;
+                    }
+                }
+            }
+            
+            switch (item){
+                case 6:
+                while(true){                      
+                    System.out.print("\n\t>>> Exercícios - Aula 6<<<");
+                    a6exp1.leitura();
+                    item = sc.nextInt();                    
+                    switch (item){                    
                     case 0:
                     System.exit(0);
                     break;
