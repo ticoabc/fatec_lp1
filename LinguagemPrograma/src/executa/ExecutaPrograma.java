@@ -25,6 +25,7 @@ import aula5.ClassExemploA5_2;
 import aula5.ClassExemploA5_3;
 import aula5.ClassExemploA5_4;
 import aula6.Aula6Principal;
+import diversos.Comparison;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
 import diversos.LotteryOdds;
@@ -163,6 +164,7 @@ public class ExecutaPrograma {
         MatrixClass mtx = new MatrixClass();
         ForClass fcl = new ForClass();
         WhileClass whl = new WhileClass();
+        Comparison cpm = new Comparison();
         
         int item = 0;
         while (true){
@@ -407,7 +409,7 @@ public class ExecutaPrograma {
                     System.out.print("\n\t>>> Exercícios - Aula 6<<<");
                     a6exp1.leitura();
                     item = sc.nextInt();                    
-                    switch (item){                    
+                    switch (item){       
                     case 0:
                     System.exit(0);
                     break;
@@ -425,6 +427,7 @@ public class ExecutaPrograma {
                     System.out.print("\n\t4 - MatrixClass");
                     System.out.print("\n\t5 - ForClass");
                     System.out.print("\n\t6 - WhileClass");
+                    System.out.print("\n\t7 - Comparison");
                     System.out.print("\n\t0 - Finalizar ");
                     System.out.print("\n\n\tDigite a operação desejada: ");
                     item = sc.nextInt();
@@ -453,6 +456,11 @@ public class ExecutaPrograma {
                     
                     case 6:
                     whl.leitura();                    
+                    break;
+                    
+                    case 7:
+                    cpm.leitura();
+                    cpm.calcular();
                     break;
                     
                     case 0:
