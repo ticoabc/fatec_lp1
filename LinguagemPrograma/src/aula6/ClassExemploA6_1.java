@@ -16,6 +16,9 @@ public class ClassExemploA6_1 {
     }
 
     public double getMedia() {
-        return (x + y) / 2;
+        double media = 0;
+        media = (x + y) / 2;
+        System.out.print("\tMédia: " + media + "\n");
+        return media;
     }
 }

@@ -9,13 +9,17 @@ public class ClassExemploA6_2 {
     public double b, h;
 
     public void ler(Scanner leitor) {
-        System.out.println("\nDigite a Base: ");
+        System.out.print("\n\tDigite a Base: ");
         b = leitor.nextDouble();
-        System.out.println("\nDigite a Altura: ");
+        System.out.print("\tDigite a Altura: ");
         h = leitor.nextDouble();
     }
 
     public double getArea() {
-        return (b * h) / 2;
+        double area = 0;
+        area = (b * h) / 2;
+        System.out.print("\tO Peso será: " 
+                    + String.format("%.2f", area) + "\n");
+        return area;
     }
 }
