@@ -25,6 +25,7 @@ import aula5.ClassExemploA5_2;
 import aula5.ClassExemploA5_3;
 import aula5.ClassExemploA5_4;
 import aula6.Aula6Principal;
+import aula7.Aula7Principal;
 import diversos.Comparison;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
@@ -141,6 +142,7 @@ public class ExecutaPrograma {
         ClassExemploA5_4 a5exp4 = new ClassExemploA5_4();
         
         Aula6Principal a6exp1 = new Aula6Principal();
+        Aula7Principal a7exp = new Aula7Principal();
         
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
@@ -175,6 +177,7 @@ public class ExecutaPrograma {
             System.out.print("\n4 - Aula 4");
             System.out.print("\n5 - Aula 5");
             System.out.print("\n6 - Aula 6");
+            System.out.print("\n7 - Aula 7");
             System.out.print("\n20 - Diversos");
             System.out.print("\n99 - Vetores");
             System.out.print("\n0 - Finalizar ");
@@ -408,7 +411,7 @@ public class ExecutaPrograma {
                 while(true){                      
                     System.out.print("\n\t>>> Exercícios - Aula 6<<<");
                     a6exp1.leitura();
-                    item = sc.nextInt();                    
+                    item = sc.nextInt();
                     switch (item){       
                     case 0:
                     System.exit(0);
@@ -417,6 +420,20 @@ public class ExecutaPrograma {
                 }
             }
             
+            switch (item){
+                case 7:
+                while(true){
+                    System.out.print("\n\t>>> Exercícios - Aula 7<<<");
+                    a7exp.leituraA7();
+                    item = sc.nextInt();
+                    switch (item){
+                        case 0:
+                            System.exit(0);
+                        break;
+                        }
+                    }
+                }
+                    
             switch (item){
                 case 20:
                     while(true){
