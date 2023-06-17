@@ -17,12 +17,16 @@ public class Aula7Principal {
     
     ClassExemploA7_1 cla71 = new ClassExemploA7_1();
     ClassExemploA7_2 cla72 = new ClassExemploA7_2();
+    ClassTarefaI tarl = new ClassTarefaI();
     
     public void leituraA7() {
         while (true) {
             System.out.print("\n"
                     + "\n\t1 Atributo global e local"
                     + "\n\t2 Método não void ou function"
+                    + "\n\t3 Tarefa I - Option Pane"
+                    + "\n\t4 Tarefa J - Option Pane"
+                    + "\n\t5 Tarefa L - Option Pane"
                     + "\n\t0 Sair"
                     + "\n\tItem: ");
             item = leitor.nextInt();
@@ -35,6 +39,16 @@ public class Aula7Principal {
 //                    cla72.lerPres(leitor);
 //                    cla72.calcMulta(item);
 //                    cla72.mostrar(item, item);
+                break;
+                case 3:
+                    tarl.leitura();
+                    tarl.exibição();
+                break;
+                case 4:
+
+                break;
+                case 5:
+
                 break;
                 case 0:
                     System.out.println("\n\tPrograma Finalizado!");
