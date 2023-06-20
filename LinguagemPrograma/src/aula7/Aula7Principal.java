@@ -18,6 +18,8 @@ public class Aula7Principal {
     ClassExemploA7_1 cla71 = new ClassExemploA7_1();
     ClassExemploA7_2 cla72 = new ClassExemploA7_2();
     ClassTarefaI tarl = new ClassTarefaI();
+    ClassTarefaJ tar2 = new ClassTarefaJ();
+    ClassTarefaL tar3 = new ClassTarefaL();
     
     public void leituraA7() {
         while (true) {
@@ -45,10 +47,12 @@ public class Aula7Principal {
                     tarl.exibição();
                 break;
                 case 4:
-
+                    tar2.leitura();
+                    tar2.exibição();
                 break;
                 case 5:
-
+                    tar3.leitura();
+                    tar3.exibição();
                 break;
                 case 0:
                     System.out.println("\n\tPrograma Finalizado!");
