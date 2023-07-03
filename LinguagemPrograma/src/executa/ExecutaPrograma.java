@@ -26,18 +26,19 @@ import aula5.ClassExemploA5_3;
 import aula5.ClassExemploA5_4;
 import aula6.Aula6Principal;
 import aula7.Aula7Principal;
+import aula8.Aula8Principal;
 import diversos.Comparison;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
 import diversos.LotteryOdds;
 import diversos.MatrixClass;
+import diversos.PedraPapelTesoura;
 import diversos.Retirement;
 import diversos.WhileClass;
 import vetores.ClassVetExemplo_2;
 import vetores.ClassVetExemplo_3;
 import vetores.ClassVetExercicio_2;
 import vetores.ClassVetExercicio_4;
-
 
 public class ExecutaPrograma {
 
@@ -143,6 +144,7 @@ public class ExecutaPrograma {
         
         Aula6Principal a6exp1 = new Aula6Principal();
         Aula7Principal a7exp = new Aula7Principal();
+        Aula8Principal a8exp = new Aula8Principal();
         
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
@@ -167,6 +169,7 @@ public class ExecutaPrograma {
         ForClass fcl = new ForClass();
         WhileClass whl = new WhileClass();
         Comparison cpm = new Comparison();
+        PedraPapelTesoura ppt = new PedraPapelTesoura();
         
         int item = 0;
         while (true){
@@ -178,6 +181,7 @@ public class ExecutaPrograma {
             System.out.print("\n5 - Aula 5");
             System.out.print("\n6 - Aula 6");
             System.out.print("\n7 - Aula 7");
+            System.out.print("\n8 - Aula 8");
             System.out.print("\n20 - Diversos");
             System.out.print("\n99 - Vetores");
             System.out.print("\n0 - Finalizar ");
@@ -427,17 +431,29 @@ public class ExecutaPrograma {
                     a7exp.leituraA7();
                     item = sc.nextInt();
                     switch (item){
-                        case 0:
-                            System.exit(0);
-                        break;
-                        }
+                    case 0:
+                    System.exit(0);
+                    break;
                     }
                 }
-                    
+            }
+            switch (item){
+                case 8:
+                while(true){
+                    System.out.print("\n\t>>> Exercícios - Aula 8<<<");
+                    a8exp.leituraA8();
+                    item = sc.nextInt();
+                    switch (item){
+                    case 0:
+                    System.exit(0);
+                    break;
+                    }
+                }
+            }
             switch (item){
                 case 20:
                     while(true){
-                    System.out.print("\n\t>>>Exercícios Diversos<<<");
+                    System.out.print("\n\n\t>>>Exercícios Diversos<<<");
                     System.out.print("\n\t1 - DiasdaSemana");
                     System.out.print("\n\t2 - Retirement");
                     System.out.print("\n\t3 - LotteryOdds");
@@ -445,6 +461,7 @@ public class ExecutaPrograma {
                     System.out.print("\n\t5 - ForClass");
                     System.out.print("\n\t6 - WhileClass");
                     System.out.print("\n\t7 - Comparison");
+                    System.out.print("\n\t8 - Pedra Papel Tesoura");
                     System.out.print("\n\t0 - Finalizar ");
                     System.out.print("\n\n\tDigite a operação desejada: ");
                     item = sc.nextInt();
@@ -478,6 +495,10 @@ public class ExecutaPrograma {
                     case 7:
                     cpm.leitura();
                     cpm.calcular();
+                    break;
+                    
+                    case 8:
+                    ppt.jogo();
                     break;
                     
                     case 0:
