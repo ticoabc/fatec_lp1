@@ -27,6 +27,7 @@ import aula5.ClassExemploA5_4;
 import aula6.Aula6Principal;
 import aula7.Aula7Principal;
 import aula8.Aula8Principal;
+import aula8.ClassControle;
 import diversos.Comparison;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
@@ -144,7 +145,8 @@ public class ExecutaPrograma {
         
         Aula6Principal a6exp1 = new Aula6Principal();
         Aula7Principal a7exp = new Aula7Principal();
-        Aula8Principal a8exp = new Aula8Principal();
+        //Aula8Principal a8exp = new Aula8Principal();
+        ClassControle a8td = new ClassControle();
         
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
@@ -441,7 +443,7 @@ public class ExecutaPrograma {
                 case 8:
                 while(true){
                     System.out.print("\n\t>>> Exercícios - Aula 8<<<");
-                    a8exp.leituraA8();
+                    a8td.leituraControle();
                     item = sc.nextInt();
                     switch (item){
                     case 0:
