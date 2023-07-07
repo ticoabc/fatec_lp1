@@ -31,6 +31,7 @@ import aula8.ClassControle;
 import diversos.Comparison;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
+import diversos.Jokempo;
 import diversos.LotteryOdds;
 import diversos.MatrixClass;
 import diversos.PedraPapelTesoura;
@@ -172,6 +173,7 @@ public class ExecutaPrograma {
         WhileClass whl = new WhileClass();
         Comparison cpm = new Comparison();
         PedraPapelTesoura ppt = new PedraPapelTesoura();
+        Jokempo jkp = new Jokempo();
         
         int item = 0;
         while (true){
@@ -464,6 +466,7 @@ public class ExecutaPrograma {
                     System.out.print("\n\t6 - WhileClass");
                     System.out.print("\n\t7 - Comparison");
                     System.out.print("\n\t8 - Pedra Papel Tesoura");
+                    System.out.print("\n\t9 - JoKemPo");
                     System.out.print("\n\t0 - Finalizar ");
                     System.out.print("\n\n\tDigite a operação desejada: ");
                     item = sc.nextInt();
@@ -503,6 +506,11 @@ public class ExecutaPrograma {
                     ppt.jogo();
                     break;
                     
+                    case 9:
+                    jkp.JoKePo();
+                    jkp.vencedor();
+                    break;
+
                     case 0:
                     System.exit(0);
                     break;
