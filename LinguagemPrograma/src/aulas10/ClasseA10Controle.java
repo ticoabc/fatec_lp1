@@ -13,6 +13,7 @@ public class ClasseA10Controle {
     //Classe1 cl1 = new Classe1();
     Classe2 cl2 = new Classe2();
     Classe3 cl3 = new Classe3();
+  //Classe10bf clbf = new Classe10bf();
     
     public void leituraControle(){
         while (tecla !=2){
@@ -21,7 +22,6 @@ public class ClasseA10Controle {
                 + "\n\t[1] Exemplo 1"
                 + "\n\t[2] Exemplo 2"
                 + "\n\t[3] Exemplo 3"
-                + "\n\t[4] "
                 + "\n\t[0] Finalizar a Aula"
                 + "\n\titem: ");
             tecla = leitor.nextInt();
@@ -38,8 +38,6 @@ public class ClasseA10Controle {
                 cl3.ler();
                 cl3.calcular();
                 cl3.exibir();
-            break;
-            case 4:
             break;
             case 0:
                 System.out.println("\n\tO programa será finalizado!");
