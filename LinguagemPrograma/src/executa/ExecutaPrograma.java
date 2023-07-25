@@ -31,6 +31,7 @@ import aula8.ClassControle;
 import aula9.ClassA9Controle;
 import aulas10.ClasseA10Controle;
 import aulas11.ClasseA11Controle;
+import aulas12.ClasseA12Controle;
 import diversos.Comparison;
 import diversos.DiasdaSemana;
 import diversos.ForClass;
@@ -164,6 +165,9 @@ public class ExecutaPrograma {
         //Aula11
         ClasseA11Controle a11ct = new ClasseA11Controle();
         
+        //Aula12
+        ClasseA12Controle a12ct = new ClasseA12Controle();
+        
         /*//Nesta classe não foi necessário instanciar para utilizar os 
         // atributos dentro do main
         ClassVetExemplo_2.controle(sc);*/
@@ -204,6 +208,7 @@ public class ExecutaPrograma {
             System.out.print("\n9 - Aula 9");
             System.out.print("\n10 - Aula 10");
             System.out.print("\n11 - Aula 11");
+            System.out.print("\n12 - Aula 12");
             System.out.print("\n20 - Diversos");
             System.out.print("\n99 - Vetores");
             System.out.print("\n0 - Finalizar ");
@@ -510,6 +515,19 @@ public class ExecutaPrograma {
                     break;
                    }
                }
+            }
+            switch (item){
+                case 12:
+                while(true){
+                    System.out.print("\n\t>>> Exercícios - Aula 12<<<");
+                    a12ct.leituraControle();
+                    item = sc.nextInt();
+                    switch (item){
+                    case 0:
+                    System.exit(0);
+                    break;
+                   }
+                }
             }
             switch (item){
                 case 20:
