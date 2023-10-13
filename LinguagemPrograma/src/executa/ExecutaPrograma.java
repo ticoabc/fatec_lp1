@@ -1,13 +1,13 @@
 package executa;
-/*@author Tiago de Freitas */
-import java.util.Scanner;
-import aula1.ClasseVolume;
-import aula1.ClasseTriangulo;
+/*@author Tiago de Freitas 
+
+*/
 import aula1.ClassExercicio_1;
 import aula1.ClassExercicio_2;
+import aula1.ClasseTriangulo;
+import aula1.ClasseVolume;
 import aula2.ClassExercicioA2_1;
 import aula2.ClassExercicioA2_2;
-import vetores.ClassVetExemplo_1;
 import aula2.ClassTarefaA2_T1;
 import aula2.ClassTarefaA2_T2;
 import aula3.ClassExercicioA3_1;
@@ -26,7 +26,6 @@ import aula5.ClassExemploA5_3;
 import aula5.ClassExemploA5_4;
 import aula6.Aula6Principal;
 import aula7.Aula7Principal;
-import aula8.Aula8Principal;
 import aula8.ClassControle;
 import aula9.ClassA9Controle;
 import aulas10.ClasseA10Controle;
@@ -45,6 +44,9 @@ import diversos.MatrixClass;
 import diversos.PedraPapelTesoura;
 import diversos.Retirement;
 import diversos.WhileClass;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import vetores.ClassVetExemplo_1;
 import vetores.ClassVetExemplo_2;
 import vetores.ClassVetExemplo_3;
 import vetores.ClassVetExercicio_2;
@@ -210,30 +212,34 @@ public class ExecutaPrograma {
         PedraPapelTesoura ppt = new PedraPapelTesoura();
         Jokempo jkp = new Jokempo();
         
-        int item = 0;
-        while (true){
-            System.out.print("\n>>> Exercícios <<<");
-            System.out.print("\n1 - Aula 1");
-            System.out.print("\n2 - Aula 2");
-            System.out.print("\n3 - Aula 3");
-            System.out.print("\n4 - Aula 4");
-            System.out.print("\n5 - Aula 5");
-            System.out.print("\n6 - Aula 6");
-            System.out.print("\n7 - Aula 7");
-            System.out.print("\n8 - Aula 8");
-            System.out.print("\n9 - Aula 9");
-            System.out.print("\n10 - Aula 10");
-            System.out.print("\n11 - Aula 11");
-            System.out.print("\n12 - Aula 12");
-            System.out.print("\n13 - Aula 13");
-            System.out.print("\n14 - Aula 14");
-            System.out.print("\n15 - Aula 15");
-            System.out.print("\n16 - Aula 16");
-            System.out.print("\n20 - Diversos");
-            System.out.print("\n99 - Vetores");
-            System.out.print("\n0 - Finalizar ");
-            System.out.print("\n\nDigite a operação desejada: ");
-            item = sc.nextInt();
+        //determina se mais tentativas são necessárias
+	boolean continua = true;
+        do {
+            try {
+                int item = 0;
+                while (true){
+                    System.out.print("\n>>> Exercícios <<<");
+                    System.out.print("\n[01] - Aula 1");
+                    System.out.print("\n2 - Aula 2");
+                    System.out.print("\n3 - Aula 3");
+                    System.out.print("\n4 - Aula 4");
+                    System.out.print("\n5 - Aula 5");
+                    System.out.print("\n6 - Aula 6");
+                    System.out.print("\n7 - Aula 7");
+                    System.out.print("\n8 - Aula 8");
+                    System.out.print("\n9 - Aula 9");
+                    System.out.print("\n10 - Aula 10");
+                    System.out.print("\n11 - Aula 11");
+                    System.out.print("\n12 - Aula 12");
+                    System.out.print("\n13 - Aula 13");
+                    System.out.print("\n14 - Aula 14");
+                    System.out.print("\n15 - Aula 15");
+                    System.out.print("\n16 - Aula 16");
+                    System.out.print("\n20 - Diversos");
+                    System.out.print("\n99 - Vetores");
+                    System.out.print("\n0 - Finalizar ");
+                    System.out.print("\n\nDigite a operação desejada: ");
+                    item = sc.nextInt();
             
             switch (item){
                 case 1:
@@ -274,12 +280,12 @@ public class ExecutaPrograma {
                         case 0:
                         System.exit(0);
                         break;
-                    }
-                }
+                    }//fim do switch
+                }//fim do while menu
                 case 0:
-                    System.exit(0);
-                    break;
-            }
+                System.exit(0);
+                break;
+            }//fim do switch Exercícios - Aula 01
             switch (item){
                 case 2:
                 while(true){
@@ -317,9 +323,9 @@ public class ExecutaPrograma {
                         case 0:
                         System.exit(0);
                         break;
-                    }
-                }
-            }
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 02
             switch (item){
                 case 3:
                 while(true){
@@ -373,9 +379,9 @@ public class ExecutaPrograma {
                         case 0:
                         System.exit(0);
                         break;
-                    }
-                }
-            }
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 03
             switch (item){
                 case 4:
                 while(true){
@@ -419,9 +425,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }            
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 04
             switch (item){
                 case 5:
                 while(true){                        
@@ -453,13 +459,12 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }
-            
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 05
             switch (item){
                 case 6:
-                while(true){                      
+                while(true){
                     System.out.print("\n\t>>> Exercícios - Aula 6<<<");
                     a6exp1.leitura();
                     item = sc.nextInt();
@@ -467,10 +472,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }
-            
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 06
             switch (item){
                 case 7:
                 while(true){
@@ -481,9 +485,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 07
             switch (item){
                 case 8:
                 while(true){
@@ -494,9 +498,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }            
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 08
             switch (item){
                 case 9:
                 while(true){
@@ -507,9 +511,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 09
             switch (item){
                 case 10:
                 while(true){
@@ -520,9 +524,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 10
             switch (item){
                case 11:
                while(true){
@@ -533,9 +537,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                   }
-               }
-            }
+                   }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 11
             switch (item){
                 case 12:
                 while(true){
@@ -546,9 +550,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                   }
-                }
-            }
+                   }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 12
             switch (item){
                 case 13:
                 while(true){
@@ -559,9 +563,9 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }
-            }
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 13
             switch (item){
                 case 14:
                 while(true){
@@ -572,150 +576,155 @@ public class ExecutaPrograma {
                     case 0:
                     System.exit(0);
                     break;
-                    }
-                }                    
-            }
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 14
             switch (item){
                 case 15:
                 while(true){
-                    System.out.print("\n\t>>> Exercícios - Aula 15<<<");
-                    a15ct.leituraControle(sc);
-                    item = sc.nextInt();
-                    switch (item){
-                    case 0:
-                    System.exit(0);
-                    break;
-                    }
-                }                
-            }
+                        System.out.print("\n\t>>> Exercícios - Aula 15<<<");
+                        a15ct.leituraControle(sc);
+                        item = sc.nextInt();
+                        switch (item){
+                        case 0:
+                        System.exit(0);
+                        break;
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 15
             switch (item){
                 case 16:
                 while(true){
-                    System.out.print("\n\t>>> Exercícios - Aula 16<<<");
-                    a16ct.leituraControle(sc);
-                    item = sc.nextInt();
-                    switch (item){
-                    case 0:
-                    System.exit(0);
-                    break;
-                    }
-                }
-            }
+                        System.out.print("\n\t>>> Exercícios - Aula 16<<<");
+                        a16ct.leituraControle(sc);
+                        item = sc.nextInt();
+                        switch (item){
+                        case 0:
+                        System.exit(0);
+                        break;
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios - Aula 16
             switch (item){
                 case 20:
                     while(true){
-                    System.out.print("\n\n\t>>>Exercícios Diversos<<<");
-                    System.out.print("\n\t1 - DiasdaSemana");
-                    System.out.print("\n\t2 - Retirement");
-                    System.out.print("\n\t3 - LotteryOdds");
-                    System.out.print("\n\t4 - MatrixClass");
-                    System.out.print("\n\t5 - ForClass");
-                    System.out.print("\n\t6 - WhileClass");
-                    System.out.print("\n\t7 - Comparison");
-                    System.out.print("\n\t8 - Pedra Papel Tesoura");
-                    System.out.print("\n\t9 - JoKemPo");
-                    System.out.print("\n\t0 - Finalizar ");
-                    System.out.print("\n\n\tDigite a operação desejada: ");
-                    item = sc.nextInt();
+                        System.out.print("\n\n\t>>>Exercícios Diversos<<<");
+                        System.out.print("\n\t1 - DiasdaSemana");
+                        System.out.print("\n\t2 - Retirement");
+                        System.out.print("\n\t3 - LotteryOdds");
+                        System.out.print("\n\t4 - MatrixClass");
+                        System.out.print("\n\t5 - ForClass");
+                        System.out.print("\n\t6 - WhileClass");
+                        System.out.print("\n\t7 - Comparison");
+                        System.out.print("\n\t8 - Pedra Papel Tesoura");
+                        System.out.print("\n\t9 - JoKemPo");
+                        System.out.print("\n\t0 - Finalizar ");
+                        System.out.print("\n\n\tDigite a operação desejada: ");
+                        item = sc.nextInt();
                     switch (item){
-                    case 1:
-                    dia.leitura();
-                    break;
-                    
-                    case 2:
-                    ret.leitura();
-                    ret.calcular();
-                    break;
-                    
-                    case 3:
-                    lot.leitura();
-                    lot.calcular();
-                    break;
-                    
-                    case 4:
-                    mtx.leitura();
-                    break;
-                    
-                    case 5:
-                    fcl.leitura();
-                    break;
-                    
-                    case 6:
-                    whl.leitura();                    
-                    break;
-                    
-                    case 7:
-                    cpm.leitura();
-                    cpm.calcular();
-                    break;
-                    
-                    case 8:
-                    ppt.jogo();
-                    break;
-                    
-                    case 9:
-                    jkp.JoKePo();
-                    jkp.vencedor();
-                    break;
+                        case 1:
+                        dia.leitura();
+                        break;
 
-                    case 0:
-                    System.exit(0);
-                    break;
-                    }
-                }
-            }
+                        case 2:
+                        ret.leitura();
+                        ret.calcular();
+                        break;
+
+                        case 3:
+                        lot.leitura();
+                        lot.calcular();
+                        break;
+
+                        case 4:
+                        mtx.leitura();
+                        break;
+
+                        case 5:
+                        fcl.leitura();
+                        break;
+
+                        case 6:
+                        whl.leitura();                    
+                        break;
+
+                        case 7:
+                        cpm.leitura();
+                        cpm.calcular();
+                        break;
+
+                        case 8:
+                        ppt.jogo();
+                        break;
+
+                        case 9:
+                        jkp.JoKePo();
+                        jkp.vencedor();
+                        break;
+
+                        case 0:
+                        System.exit(0);
+                        break;
+                    }//fim do switch
+                }//fim do while menu
+            }//fim do switch Exercícios Diversos
             
             switch (item){
                 case 99:
                     while(true){
-                    System.out.print("\n\t>>>Exercícios com Vetores<<<");
-                    System.out.print("\n\t1 - ClassVetExemplo_1");
-                    System.out.print("\n\t2 - ClassVetExemplo_2");
-                    System.out.print("\n\t3 - ClassVetExemplo_3");
-                    System.out.print("\n\t4 - ClassVetExemplo_4");
-                    System.out.print("\n\t5 - ClassVetExercicio_2");
-                    System.out.print("\n\t6 - ClassVetExercicio_4");
-                    System.out.print("\n\t0 - Finalizar ");
-                    System.out.print("\n\n\tDigite a operação desejada: ");
-                    item = sc.nextInt();
-                    switch (item){
-                    case 1:
-                    //Nesta classe não foi necessário instanciar para utilizar os 
-                    // atributos dentro do main
-                    ClassVetExemplo_1.exibir();
-                    break;
-                    
-                    case 2:
-                    //Nesta classe não foi necessário instanciar para utilizar os 
-                    // atributos dentro do main
-                    ClassVetExemplo_2.controle(sc);
-                    break;
-                    
-                    case 3:
-                    vetex3.novaLinha(sc);
-                    vetex3.exibir();
-                    break;
-                    
-                    case 5:
-                    //Nesta classe não foi necessário instanciar para utilizar os 
-                    // atributos dentro do main
-                    ClassVetExercicio_2.controle(sc);
-                    break;                   
-                    
-                    case 6:
-                    //Nesta classe não foi necessário instanciar para utilizar os 
-                    // atributos dentro do main
-                    vetexc4.novaLinha(sc);
-                    vetexc4.exibir();
-                    break;
-                    
-                    case 0:
-                    System.exit(0);
-                    break;
-                    }
-                }
+                        System.out.print("\n\t>>>Exercícios com Vetores<<<");
+                        System.out.print("\n\t1 - ClassVetExemplo_1");
+                        System.out.print("\n\t2 - ClassVetExemplo_2");
+                        System.out.print("\n\t3 - ClassVetExemplo_3");
+                        System.out.print("\n\t4 - ClassVetExemplo_4");
+                        System.out.print("\n\t5 - ClassVetExercicio_2");
+                        System.out.print("\n\t6 - ClassVetExercicio_4");
+                        System.out.print("\n\t0 - Finalizar ");
+                        System.out.print("\n\n\tDigite a operação desejada: ");
+                        item = sc.nextInt();
+                            switch (item){
+                            case 1:
+                            //Nesta classe não foi necessário instanciar para utilizar os 
+                            // atributos dentro do main
+                            ClassVetExemplo_1.exibir();
+                            break;
+
+                            case 2:
+                            //Nesta classe não foi necessário instanciar para utilizar os 
+                            // atributos dentro do main
+                            ClassVetExemplo_2.controle(sc);
+                            break;
+
+                            case 3:
+                            vetex3.novaLinha(sc);
+                            vetex3.exibir();
+                            break;
+
+                            case 5:
+                            //Nesta classe não foi necessário instanciar para utilizar os 
+                            // atributos dentro do main
+                            ClassVetExercicio_2.controle(sc);
+                            break;                   
+
+                            case 6:
+                            //Nesta classe não foi necessário instanciar para utilizar os 
+                            // atributos dentro do main
+                            vetexc4.novaLinha(sc);
+                            vetexc4.exibir();
+                            break;
+
+                            case 0:
+                            System.exit(0);
+                            break;
+                            }//fim do switch
+                        }//fim do while menu
+                    }//fim do switch Exercícios com Vetores
+                }//fim do 1º while
+            }catch (InputMismatchException erro1) {
+                System.err.println("\nNão é permitido inserir LETRAS, APENAS números inteiros!");
+                sc.nextLine(); //descarta a entrada errada do usuário
+            }finally{
             }
-        }
-        //sc.close();
-    }
-}
+        }while(continua); // fim de do...while
+    }// fim de main
+}//fim da classe ExecutaPrograma
